@@ -6,17 +6,17 @@
  
 def func1 val 
   if val = 1 #should be a double equals sign for comparison
-  return true
+  return true #no indent
   else
-  return false
+  return false #no indent
   end
 end
   
-dif max a b #should be def
+dif max a b #should be def max(a,b)
   if a > b
       return a 
   else
-  b
+  b #missing return
   end 
 end 
 end #extra end here
@@ -34,7 +34,7 @@ if looper == 10
 else
   puts "looper failed"
   failures = failures + 1
- 
+ #missing end to if statement
   
 if func1(3) == false
   puts "func1(3) passed"
@@ -47,7 +47,7 @@ end
 if max(100,1) == 100 
   puts "max(100,1) passed"
 else
-  puts "func1(3) failed"
+  puts "func1(3) failed" 
   failrues = failures + 1 #typo, should be failures
 end
 
